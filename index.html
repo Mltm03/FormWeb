@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario-Validación</title>
+</head>
+<body>
+    
+    <div class="logo-container">
+        <img class="logo" src="imagenes/logo.png" alt="">
+    </div>
+
+
+    <div class="datos-generales">
+        <div class="titulo1">
+            <h1>Datos generales del alumno</h1>
+        </div>
+
+        <div class="cont-form">
+            <div class="titulo3">
+                <h3>*Campos obligatorios</h3>
+            </div>
+
+                    <div class="campos">
+                        <form action="" name="formulario" method="post">
+                                <p >CURP:</p>
+                                <input type="text" class="Campos" name="curp" placeholder="CURP" required>
+                                <input type="submit" class="btnCurp"  value="Consultar CURP  ">
+                                <br><br>
+
+                                <div class="campo">
+                                    <p>Nombre*:</p> 
+                                    <input type="text" name="nombre"  placeholder="Nombres" required>
+                                  </div>
+                                  
+                                  <div class="campo">
+                                    <p>Primer apellido*:</p> 
+                                    <input type="text" name="apellido1" placeholder="Primer apellido" required>
+                                  </div>
+                                  
+                                  <div class="campo">
+                                    <p>Segundo apellido*:</p> 
+                                    <input type="text" name="apellido2"  placeholder="Segundo apellido" required>
+                                  </div>
+
+                                  <br>
+
+                                  <div class="campo">
+                                    <p>Correo*:</p> 
+                                    <input type="email" name="correo"  placeholder="Correo" required>
+                                  </div>
+
+                                  <div class="campo">
+                                    <p>Sexo:</p> 
+                                    <select name="sexo" >
+                                        <option value="">Seleccione una opción </option>
+                                        <option value="">Hombre</option>
+                                        <option value="">Mujer</option>
+                                        <option value="">Indefinido</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="campo">
+                                    <p>Fecha de nacimiento:</p> 
+                                    <input type="date" name="Fecha"  placeholder="Fecha de nacimiento">
+                                  </div>
+
+                                  <br>
+                                  
+                                  <div class="campo">
+                                    <p> Teléfono fijo:</p> 
+                                    <input type="phone" name="telefono"  placeholder="Telefono">
+                                  </div>
+                                  
+                                  <div class="campo">
+                                    <p> Celular:</p> 
+                                    <input type="phone" name="cel"  placeholder="Celular">
+                                  </div>
+
+                                <br>
+                                  
+                                  <div class="campo">
+                                    <p> Asunto*:</p> 
+                                    <textarea type="text" name="asunto" required ></textarea>
+                                  </div>
+
+                                  <input type="button" class="btnEnviar" id="Enviar" value="Enviar" onclick="validarEnvio()">
+                          
+                        </form>
+                    </div>
+        </div>
+
+    </div>
+    <br><br><br>
+    
+    <div class="end-container">
+        <div class="infoAlumno">
+            <h1>Manlio Lenin Torres Martinez <br>
+            7SB <br>
+            Programación web </h1>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    // Script para validar el formulario de contacto.
+    function validarEnvio(){
+        if( document.formulario.nombre.value.length == 0 ){
+            alert('Debe escribir su nombre')
+            document.formulario.nombre.focus()
+        }else if(document.formulario.apellido1.value.length == 0){
+            alert('Debe escribir su apellido')
+            document.formulario.apellido1.focus()
+        }else if(document.formulario.apellido2.value.length == 0){
+            alert('Debe escribir su apellido')
+            document.formulario.apellido2.focus()
+        }else if(document.formulario.correo.value.length == 0){
+            alert('Debe escribir su correo')
+            document.formulario.correo.focus()
+        }else if(document.formulario.asunto.value.length == 0){
+            alert('Debe escribir su asunto')
+            document.formulario.asunto.focus()
+        }else alert ('enviando..')    
+    }
+ 
+
+</script>
+
+</html>

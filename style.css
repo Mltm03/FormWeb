@@ -1,0 +1,72 @@
+body{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.end-container{
+    background-color:  #650404;
+    text-align: center;
+    margin-top: auto;
+    
+ }
+ .infoAlumno{
+    color: white;
+    padding: 10px;
+ }
+.logo-container{
+   background-color: rgb(210, 208, 208);
+   text-align: center;
+}
+.logo{
+    padding: 10px;
+}
+
+.titulo1{
+    margin: auto;
+    width: 1500px;
+    background-image: linear-gradient(  to right, #8B0000, #8B0000 ), linear-gradient(to right, rgb(209, 206, 206),rgb(209, 206, 206)); /* Aplica dos gradientes lineales */
+    background-position:  0 100%, 0 calc(100% - 8px); /* Posiciona los gradientes en la parte inferior */
+  background-size: 4% 8px, 100% 2px; /* Define el tamaño de cada línea */
+  background-repeat: no-repeat; /* Evita que los gradientes se repitan */
+  padding-bottom: 15px; /* Espacio suficiente para ambas líneas */
+    
+}
+.titulo3{
+    margin: auto;
+    width: 1525px;
+}
+form{  
+    margin: auto;
+    width: 1500px;
+}
+
+.btnCurp{
+    background-color: #650404;
+    padding: 10px;
+    color: white;
+}
+
+input,select{
+    width: 200px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.campo {
+    display: inline-block; /* Muestra cada campo como un bloque en línea */
+    margin-right: 10px; /* Agrega un espacio entre cada campo */
+  }
+
+
+  textarea{
+    width: 1500px;
+    height: 200px;
+  }
+
+.btnEnviar{
+    background-color: #4f5753;
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+}
